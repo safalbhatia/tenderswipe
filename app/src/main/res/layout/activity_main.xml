@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.safal.tinderswipejava.tinder.CardStackView
+        android:id="@+id/activity_main_card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:elevation="6dp"
+        android:paddingBottom="98dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="32dp"
+        app:topOverlay="@layout/overlay_top"
+        app:elevationEnabled="true"
+        app:leftOverlay="@layout/overlay_left"
+        app:rightOverlay="@layout/overlay_right"
+        app:stackFrom="top"
+        app:swipeDirection="freedom_no_bottom"
+        app:swipeEnabled="true"
+        app:translationDiff="0"
+        app:scaleDiff="0.1"
+        app:swipeThreshold="0.4"
+        app:visibleCount="4">
+
+    </com.safal.tinderswipejava.tinder.CardStackView>
+    <ProgressBar
+        android:id="@+id/activity_main_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
